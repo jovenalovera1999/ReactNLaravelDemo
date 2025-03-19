@@ -1,4 +1,6 @@
-const AddGenderForm = () => {
+import { Link } from "react-router-dom";
+
+const EditGenderForm = () => {
   return (
     <>
       <div className="form-group">
@@ -7,11 +9,14 @@ const AddGenderForm = () => {
           <input
             type="text"
             className="form-control"
-            id="gender"
             name="gender"
+            id="gender"
           />
         </div>
         <div className="d-flex justify-content-end">
+          <Link to={"/"} className="btn btn-secondary me-1">
+            Back
+          </Link>
           <button type="submit" className="btn btn-primary">
             Save
           </button>
@@ -21,4 +26,4 @@ const AddGenderForm = () => {
   );
 };
 
-export default AddGenderForm;
+export default EditGenderForm;
