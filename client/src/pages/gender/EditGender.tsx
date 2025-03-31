@@ -23,6 +23,7 @@ const EditGender = () => {
     setIsSuccess(false);
     setIsVisible(false);
   };
+
   const content = (
     <>
       <AlertMessage
