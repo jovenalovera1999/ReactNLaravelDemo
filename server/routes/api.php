@@ -31,7 +31,3 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::put('/destroyUser/{user}', 'destroyUser');
     });
 });
-
-// Route::get('/user', function (Request $request) {
-//     return $request->user();
-// })->middleware('auth:sanctum');
